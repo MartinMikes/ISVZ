@@ -1,0 +1,366 @@
+================================================================================
+ANAL├ŁZA STRUKTURY JSON SOUBORU - VZ-2026-01-ICT.json
+================================================================================
+
+Po─Źet zak├ízek: 145
+
+================================================================================
+STRUKTURA PRVN├Ź ZAK├üZKY
+================================================================================
+
+  verejna_zakazka.casova_znacka: string: "2026-01-08T08:01:43"
+  verejna_zakazka.identifikator_NIPEZ: string: "RVZ2600001030"
+  verejna_zakazka.identifikator_v_elektronickem_nastroji: null
+    verejna_zakazka.identifikatory_v_elektronickem_nastroji[0].kod_nastroje: string: "VVZ"
+    verejna_zakazka.identifikatory_v_elektronickem_nastroji[0].identifikator: string: "Z2026-000853"
+  verejna_zakazka.interniIdentifikatorVerejneZakazkyPridelenyZadavatelem: string: "ID 2697"
+  verejna_zakazka.nazev_verejne_zakazky: string: "UTB ÔÇô MILAN ÔÇô FLK┼ś - Pick to Light technologie a materi├íl pro manipula─Źn├ş a fixa─Źn├ş jednotky 2"
+  verejna_zakazka.predpokladana_hodnota_bez_DPH_v_CZK: number: 862790.0
+  verejna_zakazka.predpokladana_hodnota_bez_DPH: number: 862790.0
+  verejna_zakazka.predpokladana_hodnota_bude_uverejnena: boolean: True
+  verejna_zakazka.predpokladana_hodnota_bez_DPH_mena: string: "CZK"
+  verejna_zakazka.predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH_v_CZK: null
+  verejna_zakazka.predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH: null
+  verejna_zakazka.predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH_mena: null
+  verejna_zakazka.druh_verejne_zakazky: string: "Dod├ívky"
+  verejna_zakazka.rezim_verejne_zakazky: string: "Nadlimitn├ş"
+  verejna_zakazka.rezim_dle_volby_zadavatele: null
+    verejna_zakazka.predmet.v_oblasti_obrany_a_bezpecnosti: boolean: False
+    verejna_zakazka.predmet.popis_predmetu: string: "P┼Öedm─Ťtem ve┼Öejn├ę zak├ízky je dod├ívka pick to light technologie po┼Öizovan├í pro pot┼Öeby Fakulty 
+logis"
+    verejna_zakazka.predmet.hlavni_kod_CPV: string: "30230000"
+      verejna_zakazka.predmet.mista_plneni[0].nuts: string: "CZ072"
+      verejna_zakazka.predmet.mista_plneni[0].kod_zeme_mista_plneni: string: "CZE"
+      verejna_zakazka.predmet.mista_plneni[0].misto_plneni_jine: null
+      verejna_zakazka.predmet.mista_plneni[0].dalsi_informace_o_miste_plneni: string: "Uhersk├ę Hradi┼ít─Ť"
+  verejna_zakazka.oduvodneni_nerozdeleni_nadlimitni_verejne_zakazky_na_casti: null
+  verejna_zakazka.typ_verejne_zakazky_dle_vyse_predpokladane_hodnoty: string: "Ve┼Öejn├í zak├ízka mal├ęho rozsahu"
+    verejna_zakazka.casti_verejne_zakazky[0].identifikator_NIPEZ: string: "RVZ2600001030/001"
+    verejna_zakazka.casti_verejne_zakazky[0].identifikator_v_elektronickem_nastroji: null
+      verejna_zakazka.casti_verejne_zakazky[0].identifikatory_v_elektronickem_nastroji[0].kod_nastroje: string: "VVZ"
+      verejna_zakazka.casti_verejne_zakazky[0].identifikatory_v_elektronickem_nastroji[0].identifikator: string: "LOT-0001"
+    verejna_zakazka.casti_verejne_zakazky[0].interniIdentifikatorVerejneZakazkyPridelenyZadavatelem: string: "1"
+    verejna_zakazka.casti_verejne_zakazky[0].nazev_casti_verejne_zakazky: string: "UTB ÔÇô MILAN ÔÇô FLK┼ś - Pick to Light technologie a materi├íl pro manipula─Źn├ş a fixa─Źn├ş jednotky 2"
+    verejna_zakazka.casti_verejne_zakazky[0].druh_casti_verejne_zakazky: string: "Dod├ívky"
+    verejna_zakazka.casti_verejne_zakazky[0].rezim_casti_verejne_zakazky: null
+    verejna_zakazka.casti_verejne_zakazky[0].rezim_dle_volby_zadavatele: null
+    verejna_zakazka.casti_verejne_zakazky[0].predpokladana_hodnota_casti_bez_DPH_v_CZK: null
+    verejna_zakazka.casti_verejne_zakazky[0].predpokladana_hodnota_casti_bez_DPH: number: 862790.0
+    verejna_zakazka.casti_verejne_zakazky[0].predpokladana_hodnota_casti_bez_DPH_mena: string: "CZK"
+    verejna_zakazka.casti_verejne_zakazky[0].predpokladana_hodnota_bude_uverejnena: boolean: True
+    verejna_zakazka.casti_verejne_zakazky[0].predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH_v_CZK: null
+    verejna_zakazka.casti_verejne_zakazky[0].predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH: null
+    verejna_zakazka.casti_verejne_zakazky[0].predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH_mena: null
+      verejna_zakazka.casti_verejne_zakazky[0].predmet.v_oblasti_obrany_a_bezpecnosti: boolean: False
+      verejna_zakazka.casti_verejne_zakazky[0].predmet.popis_predmetu: string: "P┼Öedm─Ťtem ve┼Öejn├ę zak├ízky je dod├ívka pick to light technologie po┼Öizovan├í pro pot┼Öeby Fakulty
+logist"
+      verejna_zakazka.casti_verejne_zakazky[0].predmet.hlavni_kod_CPV: string: "30230000"
+        verejna_zakazka.casti_verejne_zakazky[0].predmet.mista_plneni[0].nuts: string: "CZ072"
+        verejna_zakazka.casti_verejne_zakazky[0].predmet.mista_plneni[0].kod_zeme_mista_plneni: string: "CZE"
+        verejna_zakazka.casti_verejne_zakazky[0].predmet.mista_plneni[0].misto_plneni_jine: null
+        verejna_zakazka.casti_verejne_zakazky[0].predmet.mista_plneni[0].dalsi_informace_o_miste_plneni: string: "Uhersk├ę Hradi┼ít─Ť"
+    verejna_zakazka.casti_verejne_zakazky[0].vyhrazena_zmena_zavazku: null
+    verejna_zakazka.casti_verejne_zakazky[0].popis_vyhrazene_zmeny_zavazku: null
+    verejna_zakazka.casti_verejne_zakazky[0].maximalni_mozny_pocet_prodlouzeni_smlouvy: null
+    verejna_zakazka.casti_verejne_zakazky[0].popis_prodlouzeni: null
+    verejna_zakazka.casti_verejne_zakazky[0].oduvodneni_pouziti_zjednoduseneho_rezimu: null
+    verejna_zakazka.casti_verejne_zakazky[0].verejna_zakazka_je_alespon_castecne_financovana_z_prostredku_Evropske_unie: boolean: True
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.stav: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.kategorie_zadavaciho_postupu: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.druh_zadavaciho_postupu: string: "Otev┼Öen├ę ┼Ö├şzen├ş"
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.evidence_vysledku_zadavaciho_postupu: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.duvod_pro_pouziti_vyjimky: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.identifikator_CELEX_pravniho_predpisu_EU: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.navaznost_na_vysledek_jineho_zadavaciho_postupu: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.popis_zadavaciho_postupu_v_pripade_ze_se_jedna_o_dobrovolne_uverejneni_v_TED: string: "nadlimitn├ş ┼Ö├şzen├ş"
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravni_predpis_EU_na_zaklade_nehoz_probiha_zadavaci_postup: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravni_predpis_EU: string: "Spad├í do p┼»sobnosti Sm─Ťrnice 2014/24/EU"
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.datum_zahajeni_zadavaciho_postupu: string: "2026-01-07T07:48:25"
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.datum_ukonceni_zadavaciho_postupu: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.zadavatel_si_vyhrazuje_pravo_zadat_verejnou_zakazku_na_zaklade_puvodnich_nabidek_bez_dalsich_jednani: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.udeleni_cen_odmen_jinych_plateb: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.hodnota_cen_odmen_jinych_plateb: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.hodnota_cen_odmen_jinych_plateb_mena: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.dalsi_informace_v_souvislosti_s_odmenami: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.ocenovane_umisteni: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.plneni_zakazky_vyhrazeno_v_ramci_programu_chranenych_zamestnani: boolean: False
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pocet_zaslanych_zaevidovanych_vysvetleni_zadavaci_dokumentace: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.zkraceni_lhuty: boolean: False
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.oduvodneni_pouziti_zkraceni_lhuty_v_zadavacim_postupu: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.oduvodneni_pouziti_jrsu_nebo_soutezniho_dialogu: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.je_pozadovana_pravni_forma_seskupeni_dodavatelu_jimz_bude_verejna_zakazka_zadana: boolean: False
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravni_forma_kterou_musi_mit_seskupeni_dodavatelu_jimz_bude_verejna_zakazka_zadana: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.verejna_zakazka_je_vhodna_pro_male_a_stredni_podniky: boolean: True
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.presne_informace_o_lhutach_pro_prezkumna_rizeni: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pusobnost_mezinarodni_dohody_o_verejnych_zakazkach: boolean: True
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.plneni_teto_verejne_zakazky_je_vyhrazeno_v_ramci_programu_chranenych_zamestnani: boolean: False
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.dalsi_informace: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.narizeni_o_zahranicnich_subvencich: boolean: False
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.odkaz_na_profil: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.verejny_ZP: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.zpusob_zadavani_verejnych_zakazek_na_zaklade_ramcove_dohody: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.ramcova_dohoda_ma_stanoven_maximalni_pocet_ucastniku: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.predpokladany_maximalni_pocet_ucastniku_ramcove_dohody: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.oduvodneni_doby_trvani_ramcove_dohody: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.datum_zacatku_doby_trvani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.datum_konce_doby_trvani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.doba_trvani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.doba_trvani_jednotka: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.doba_trvani_jine: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_ramcove_dohode.typ_ramcove_dohody: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_zadavacich_dokumentacich[0].pristup_k_zadavaci_dokumentaci_je_omezen: boolean: False
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_zadavacich_dokumentacich[0].oduvodneni_omezeneho_pristupu_k_zadavaci_dokumentaci: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_zadavacich_dokumentacich[0].informace_o_pristupu_k_zadavaci_dokumentaci_jsou_na: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_zadavacich_dokumentacich[0].zadavaci_dokumentace_je_dostupna_na: string: "https://tenderarena.cz/dodavatel/zakazka/833225"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.nabidky_musi_byt_podany_ve_forme_elektronickych_katalogu_nebo_musi_zahrnovat_elektronicky_katalog: boolean: False
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.jistota: boolean: False
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.popis_jistoty: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.zadavatel_provede_nakup_z_elektronickych_katalogu_vice_dodavatelu: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.povoleni_odtajneni_podani_pred_vyprsenim_lhuty: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.budou_prijimany_varianty_nabidky: boolean: False
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.zpusob_podani: string: "Elektronicky"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.typ_aktualniho_podani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.jazyk_podani: string: "─Źe┼ítina"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.internetova_adresa_pro_podani: string: "https://tenderarena.cz/dodavatel/seznam-profilu-zadavatelu/detail/Z0001377"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.oduvodneni_nemoznosti_elektronickeho_podavani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.popis_listinneho_podani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.specifikace_podani.je_pozadovan_uznavany_elektronicky_podpis_nebo_pecet: boolean: True
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.kriteria_kvalifikace.zakladni_zpusobilost: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.kriteria_kvalifikace.profesni_zpusobilost: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.kriteria_kvalifikace.ekonomicka_kvalifikace: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.kriteria_kvalifikace.technicka_kvalifikace: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.kriteria_kvalifikace.zdroj_kriterii_kvalifikace: string: "Zad├ívac├ş dokumentace"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.lhuty[0].druh_lhuty: string: "Lh┼»ta pro pod├ín├ş nab├şdky"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.lhuty[0].datum_a_cas_zacatku_lhuty: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.lhuty[0].datum_a_cas_konce_lhuty: string: "2026-02-09T09:00:00"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.lhuty[0].doba_trvani_lhuty: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.lhuty[0].doba_trvani_lhuty_jednotka: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.lhuty[0].aktivni: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.lhuty[0].identifikator: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.doba_trvani.datum_zacatku_doby_trvani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.doba_trvani.datum_konce_doby_trvani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.doba_trvani.doba_trvani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.doba_trvani.doba_trvani_jednotka: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.doba_trvani.doba_trvani_jine: string: "Nezn├ím├í"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.dalsi_pozadavky.osvedceni_o_vzdelani_a_odborne_kvalifikaci_pracovniku: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.dalsi_pozadavky.je_pozadovana_bezpecnostni_proverka: boolean: False
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.dalsi_pozadavky.informace_o_bezpecnostni_proverce: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.obchodni_nebo_jine_podminky.budou_pouzivany_elektronicke_objednavky: boolean: False
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.obchodni_nebo_jine_podminky.bude_pouzita_elektronicka_platba: boolean: True
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.obchodni_nebo_jine_podminky.hlavni_podminky_financovani_a_platebni_podminky_pripadne_odkaz_na_prislusna_ustanoveni_ktera_tyto_podminky_upravuji: string: "viz n├ívrh smlouvy jako sou─Ź├íst zad├ívac├ş dokumentace
+
+v r├ímci projektu: Modernizace infrastruktury a "
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.obchodni_nebo_jine_podminky.dalsi_zvlastni_podminky_kterym_podleha_plneni_zakazky_predevsim_pokud_jde_o_zabezpeceni_dodavek_a_duvernost_informaci: null
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.hodnoty_podanych_nabidek: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_otevirani_podani[0].samostatne_zpristupneni_nabidkove_ceny_nebo_nakladu_zivotniho_cyklu: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_otevirani_podani[0].typPodani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_otevirani_podani[0].datum_a_cas_otevirani_podani: string: "2026-02-09T09:00:00"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.informace_o_otevirani_podani[0].misto_otevirani_podani: string: "https://tenderarena.cz/dodavatel/zakazka/833225"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.pouziti_automatickeho_losu_v_pripade_shodneho_hodnoceni: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.pouziti_elektronicke_aukce_v_zadavacim_postupu: boolean: False
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.dalsi_informace_o_pouziti_elektronicke_aukce: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.internetova_adresa_elektronicke_aukce: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.ekonomicka_vyhodnost: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.metoda_hodnoceni: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.vzorec_pro_hodnoceni: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.pevna_cena_za_jednotku_nebo_celkem: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.hodnota_pevne_ceny_bez_DPH: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.hodnota_pevne_ceny_s_DPH: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.mena: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.hodnoceni_nabidkove_ceny: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].identifikace: string: "0"
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].nazev_kriteria: string: "nejni┼ż┼í├ş nab├şdkov├í cena"
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].vaha_kriteria: number: 100.0
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].vaha: string: "V├íha (procenta)"
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].druh_kriteria: string: "Cena"
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].typ_kriteria: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].jednotka: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].kriterium_je_ciselne_vyjadritelne: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].popis_kriteria_hodnoceni: string: "nejni┼ż┼í├ş nab├şdkov├í cena"
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].typ_vztahu_kriteria: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].poradi: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].omezeni_shora_pro_ucely_hodnoceni: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].omezeni_shora_pro_vylouceni: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].omezeni_zdola_pro_ucely_hodnoceni: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].omezeni_zdola_pro_vylouceni: null
+          verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.pravidla_pro_hodnoceni.kriteria_pro_hodnoceni_nabidek_nebo_navrhu[0].cleneni_nabidkove_ceny: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.vysledek.vysledek_ukonceni_zadavaciho_postupu: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.vysledek.oduvodneni_zruseni_zadavaciho_postupu: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.vysledek.datum_a_cas_zruseni_postupu: string: "0001-01-01T00:00:00"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.popis_odpovedneho_zadavani[0].popis_odpovedneho_zadavani: string: "Zadavatel zad├ív├í tuto ve┼Öejnou zak├ízku v souladu se z├ísadami spole─Źensky odpov─Ťdn├ęho ve┼Öejn├ęho zad├ív"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.popis_odpovedneho_zadavani[0].typ_odpovedneho_zadavani: string: "Soci├íln─Ť odpov─Ťdn├ę zad├ív├ín├ş"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.popis_odpovedneho_zadavani[0].oduvodneni_nezohledneni_odpovedneho_zadavani: null
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.uplatneni_podminek_pristupnosti_pro_osoby_s_postizenim_v_technickych_specifikacich[0].oduvodneni_proc_nebyly_zahrnuty_podminky_pristupnosti: string: "Osoby sezdravotn├şm posti┼żen├ş se mohou pod├şlet na vedlej┼í├şch pomocn├Żch ─Źinnostech, jako jsou nap┼Ö. na"
+        verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.uplatneni_podminek_pristupnosti_pro_osoby_s_postizenim_v_technickych_specifikacich[0].uplatneni_podminek_pristupnosti_pro_osoby_s_postizenim: string: "Podm├şnky p┼Ö├şstupnosti pro osoby s posti┼żen├şm nejsou zahrnuty s n├ísleduj├şc├şm od┼»vodn─Ťn├şm"
+      verejna_zakazka.casti_verejne_zakazky[0].zadavaci_postup_pro_cast.zadavatel_postupuje_dle_parag_61_odst_3_ZZVZ: boolean: False
+      verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.pravidla_pro_postup_zadavatele: null
+        verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].kategorie_zadavatele: string: "Jin├í pr├ívnick├í osoba (dle ┬ž 4 odst. 1 p├şsm. e) z├íkona ─Ź. 134/2016 Sb.)"
+        verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].role_zadavatele: null
+        verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].hlavni_predmet_cinnosti_verejneho_zadavatele: string: "Vzd─Ťl├ív├ín├ş"
+        verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].predmet_relevantni_cinnosti: null
+        verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].zadava_zadavaci_postup: null
+        verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].adresa_profilu: string: "https://tenderarena.cz"
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].subjekt.nazev_subjektu: string: "Univerzita Tom├í┼íe Bati ve Zl├şn─Ť"
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].subjekt.ico: string: "70883521"
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].subjekt.jiny_identifikator: null
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].subjekt.sidlo: null
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].subjekt.kod_NUTS: string: "CZ072"
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].subjekt.maly_a_stredni_podnik: null
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].subjekt.nipez_id_subjektu: null
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].subjekt.identifikator_v_elektronickem_nastroji: null
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].subjekt.stat_adresa: null
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].provozni_jednotka_s_funkcni_samostatnosti.nazev_provozni_jednotky_s_funkcni_samostatnosti: null
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].provozni_jednotka_s_funkcni_samostatnosti.sidlo: null
+          verejna_zakazka.zadavaci_postupy[0].zadavatel_zadavaciho_postupu.zadavatele[0].provozni_jednotka_s_funkcni_samostatnosti.kod_NUTS: null
+    verejna_zakazka.zadavaci_postupy[0].evidencni_cislo_zadavaciho_postupu_ve_VVZ: null
+    verejna_zakazka.zadavaci_postupy[0].evidencni_cislo_zadavaciho_postupu_ve_vestniku_verejnych_zakazek: string: "Z2026-000853"
+    verejna_zakazka.zadavaci_postupy[0].do_kterych_casti_muze_dodavatel_podat_nabidku: null
+    verejna_zakazka.zadavaci_postupy[0].pocetCastiDoKterychMuzeBytNabidkaPodana: null
+    verejna_zakazka.zadavaci_postupy[0].nejvyssiPocetCastiKtereMohouBytZadanyJednomuUchazeci: null
+    verejna_zakazka.zadavaci_postupy[0].dalsi_informace: null
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].evidencni_cislo_formulare: string: "F2026-000853"
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].datum_a_cas_odeslani_k_uverejneni: string: "2026-01-07T07:48:26"
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].datum_a_cas_uverejneni_ve_VVZ: string: "2026-01-08T08:01:43"
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].datum_a_cas_odeslani_do_TED: string: "2026-01-07T07:48:25"
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].datum_a_cas_uverejneni_v_TED: string: "2026-01-08T05:00:12"
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].identifikator_oznameni_verze: null
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].typ_formulare: string: "Zah├íjen├ş"
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].typ_oznameni: string: "16 ÔÇô Ozn├ímen├ş o zah├íjen├ş zad├ívac├şho ┼Ö├şzen├ş ÔÇô obecn├í ve┼Öejn├í zak├ízka"
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].verze_oznameni: null
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].hodnota_vsech_verejnych_zakazek_uvedenych_v_oznameni: null
+      verejna_zakazka.zadavaci_postupy[0].uverejnovaci_formulare[0].hodnota_vsech_verejnych_zakazek_uvedenych_v_oznameni_mena: null
+      verejna_zakazka.zadavaci_postupy[0].zadavaci_postupy_pro_casti[0].identifikator_NIPEZ: string: "RVZ2600001030/001"
+      verejna_zakazka.zadavaci_postupy[0].zadavaci_postupy_pro_casti[0].identifikator_v_elektronickem_nastroji: null
+        verejna_zakazka.zadavaci_postupy[0].zadavaci_postupy_pro_casti[0].identifikatory_v_elektronickem_nastroji[0].kod_nastroje: string: "VVZ"
+        verejna_zakazka.zadavaci_postupy[0].zadavaci_postupy_pro_casti[0].identifikatory_v_elektronickem_nastroji[0].identifikator: string: "LOT-0001"
+    verejna_zakazka.zadavaci_postupy[0].identifikator_NIPEZ: string: "ZP/RVZ2600001030/001"
+    verejna_zakazka.zadavaci_postupy[0].identifikator_v_elektronickem_nastroji: null
+      verejna_zakazka.zadavaci_postupy[0].identifikatory_v_elektronickem_nastroji[0].kod_nastroje: string: "VVZ"
+      verejna_zakazka.zadavaci_postupy[0].identifikatory_v_elektronickem_nastroji[0].identifikator: string: "Z2026-000853"
+  historie_lhut[0].identifikator_NIPEZ_ke_kteremu_se_zaznamy_vztahuji: string: "RVZ2600001030/001"
+  historie_lhut[0].datum_a_cas_zaznamu: string: "2026-01-08T08:01:43"
+    historie_lhut[0].zaznamy[0].druh_lhuty: string: "Lh┼»ta pro pod├ín├ş nab├şdky"
+    historie_lhut[0].zaznamy[0].datum_a_cas_zacatku_lhuty: null
+    historie_lhut[0].zaznamy[0].datum_a_cas_konce_lhuty: string: "2026-02-09T09:00:00"
+    historie_lhut[0].zaznamy[0].doba_trvani_lhuty: null
+    historie_lhut[0].zaznamy[0].doba_trvani_lhuty_jednotka: null
+    historie_lhut[0].zaznamy[0].aktivni: null
+    historie_lhut[0].zaznamy[0].identifikator: null
+zdroj_dat: string: "V─Ťstn├şk ve┼Öejn├Żch zak├ízek"
+doporuceni: number: 5
+
+================================================================================
+ANAL├ŁZA VYPLN─ÜNOSTI POL├Ź (% zak├ízek s nepr├ízdnou hodnotou)
+================================================================================
+
+
+­čöÁ POLE POU┼Ż├ŹVAN├ü V REPORTECH:
+--------------------------------------------------------------------------------
+  Ôťô doporuceni                                                             100.0% (145/145)
+  Ôťô verejna_zakazka.druh_verejne_zakazky                                   100.0% (145/145)
+  Ôťô verejna_zakazka.identifikator_NIPEZ                                    100.0% (145/145)
+  Ôťô verejna_zakazka.nazev_verejne_zakazky                                  100.0% (145/145)
+  Ôťô verejna_zakazka.predmet.hlavni_kod_CPV                                 100.0% (145/145)
+  Ôťô verejna_zakazka.predmet.mista_plneni                                   100.0% (145/145)
+  Ôťô verejna_zakazka.predmet.popis_predmetu                                 100.0% (145/145)
+  Ôťô verejna_zakazka.predmet.vedlejsi_kod_CPV                                69.0% (100/145)
+  Ôťô verejna_zakazka.predpokladana_hodnota_bez_DPH_v_CZK                     78.6% (114/145)
+  Ôťô verejna_zakazka.rezim_verejne_zakazky                                  100.0% (145/145)
+
+­ččó U┼ŻITE─îN├ü POLE NEVYU┼ŻIT├ü V REPORTECH (>50% vypln─Ťnost):
+--------------------------------------------------------------------------------
+  ÔÇó verejna_zakazka                                                        100.0% (145/145)
+  ÔÇó verejna_zakazka.casova_znacka                                          100.0% (145/145)
+  ÔÇó verejna_zakazka.identifikatory_v_elektronickem_nastroji                100.0% (145/145)
+  ÔÇó verejna_zakazka.identifikatory_v_elektronickem_nastroji.kod_nastroje   100.0% (145/145)
+  ÔÇó verejna_zakazka.identifikatory_v_elektronickem_nastroji.identifikator  100.0% (145/145)
+  ÔÇó verejna_zakazka.predpokladana_hodnota_bude_uverejnena                  100.0% (145/145)
+  ÔÇó verejna_zakazka.predmet                                                100.0% (145/145)
+  ÔÇó verejna_zakazka.predmet.v_oblasti_obrany_a_bezpecnosti                 100.0% (145/145)
+  ÔÇó verejna_zakazka.typ_verejne_zakazky_dle_vyse_predpokladane_hodnoty     100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy                                       100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu          100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.adresa_profilu 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.subjekt 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.subjekt.nazev_subjektu 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.subjekt.ico 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.subjekt.kod_NUTS 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.provozni_jednotka_s_funkcni_samostatnosti 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.evidencni_cislo_zadavaciho_postupu_ve_vestniku_verejnych_zakazek 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare                100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.evidencni_cislo_formulare 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.datum_a_cas_odeslani_k_uverejneni 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.datum_a_cas_uverejneni_ve_VVZ 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.typ_formulare  100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.typ_oznameni   100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavaci_postupy_pro_casti            100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavaci_postupy_pro_casti.identifikator_NIPEZ 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavaci_postupy_pro_casti.identifikatory_v_elektronickem_nastroji 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavaci_postupy_pro_casti.identifikatory_v_elektronickem_nastroji.kod_nastroje 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavaci_postupy_pro_casti.identifikatory_v_elektronickem_nastroji.identifikator 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.identifikator_NIPEZ                   100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.identifikatory_v_elektronickem_nastroji 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.identifikatory_v_elektronickem_nastroji.kod_nastroje 100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.identifikatory_v_elektronickem_nastroji.identifikator 100.0% (145/145)
+  ÔÇó historie_lhut                                                          100.0% (145/145)
+  ÔÇó historie_lhut.identifikator_NIPEZ_ke_kteremu_se_zaznamy_vztahuji       100.0% (145/145)
+  ÔÇó historie_lhut.datum_a_cas_zaznamu                                      100.0% (145/145)
+  ÔÇó historie_lhut.zaznamy                                                  100.0% (145/145)
+  ÔÇó historie_lhut.zaznamy.druh_lhuty                                       100.0% (145/145)
+  ÔÇó zdroj_dat                                                              100.0% (145/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.kategorie_zadavatele  99.3% (144/145)
+  ÔÇó verejna_zakazka.predmet.mista_plneni.kod_zeme_mista_plneni              98.6% (143/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.hlavni_predmet_cinnosti_verejneho_zadavatele  92.4% (134/145)
+  ÔÇó verejna_zakazka.predmet.mista_plneni.nuts                               90.3% (131/145)
+  ÔÇó verejna_zakazka.predpokladana_hodnota_bez_DPH                           78.6% (114/145)
+  ÔÇó verejna_zakazka.predpokladana_hodnota_bez_DPH_mena                      78.6% (114/145)
+  ÔÇó verejna_zakazka.interniIdentifikatorVerejneZakazkyPridelenyZadavatelem  77.9% (113/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.datum_a_cas_odeslani_do_TED  75.9% (110/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.datum_a_cas_uverejneni_v_TED  75.9% (110/145)
+  ÔÇó historie_lhut.zaznamy.datum_a_cas_konce_lhuty                           75.9% (110/145)
+  ÔÇó verejna_zakazka.predmet.mista_plneni.dalsi_informace_o_miste_plneni     57.2% (83/145)
+
+­ččí ZAJ├ŹMAV├ü POLE (10-50% vypln─Ťnost):
+--------------------------------------------------------------------------------
+  ÔÇó verejna_zakazka.zadavaci_postupy.externi_administrator                  32.4% (47/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.externi_administrator.subjekt          32.4% (47/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.externi_administrator.subjekt.nazev_subjektu  32.4% (47/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.externi_administrator.subjekt.ico      32.4% (47/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.externi_administrator.subjekt.kod_NUTS  32.4% (47/145)
+  ÔÇó historie_lhut.zaznamy.doba_trvani_lhuty                                 24.1% (35/145)
+  ÔÇó historie_lhut.zaznamy.doba_trvani_lhuty_jednotka                        24.1% (35/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.opravy          24.1% (35/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.opravy.oduvodneni_opravy  24.1% (35/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.opravy.popis_opravy  24.1% (35/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.opravy.popis_duvodu_opravy  17.9% (26/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.opravy.oprava_zadavaci_dokumentace_nebo_souteznich_podminek  15.2% (22/145)
+  ÔÇó verejna_zakazka.zadavaci_postupy.uverejnovaci_formulare.opravy.datum_a_cas_kdy_byla_zadavaci_dokumentace_opravena  13.8% (20/145)
+  ÔÇó verejna_zakazka.vedlejsi_druhy_verejne_zakazky                          11.0% (16/145)
+
+­čôŐ STATISTIKY SPECIFICK├ŁCH SEKC├Ź:
+--------------------------------------------------------------------------------
+
+  Zad├ívac├ş postupy (45 pol├ş):
+    ÔÇó verejna_zakazka.zadavaci_postupy                                     100.0%
+    ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu        100.0%
+    ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele 100.0%
+    ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.adresa_profilu 100.0%
+    ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.subjekt 100.0%
+    ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.subjekt.nazev_subjektu 100.0%
+    ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.subjekt.ico 100.0%
+    ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.subjekt.kod_NUTS 100.0%
+    ÔÇó verejna_zakazka.zadavaci_postupy.zadavatel_zadavaciho_postupu.zadavatele.provozni_jednotka_s_funkcni_samostatnosti 100.0%
+    ÔÇó verejna_zakazka.zadavaci_postupy.evidencni_cislo_zadavaciho_postupu_ve_vestniku_verejnych_zakazek 100.0%
+
+  ─î├ísti zak├ízky (121 pol├ş):
+    ÔÇó verejna_zakazka.casti_verejne_zakazky                                100.0%
+    ÔÇó verejna_zakazka.casti_verejne_zakazky.identifikator_NIPEZ            100.0%
+    ÔÇó verejna_zakazka.casti_verejne_zakazky.identifikatory_v_elektronickem_nastroji 100.0%
+    ÔÇó verejna_zakazka.casti_verejne_zakazky.identifikatory_v_elektronickem_nastroji.kod_nastroje 100.0%
+    ÔÇó verejna_zakazka.casti_verejne_zakazky.identifikatory_v_elektronickem_nastroji.identifikator 100.0%
+    ÔÇó verejna_zakazka.casti_verejne_zakazky.interniIdentifikatorVerejneZakazkyPridelenyZadavatelem 100.0%
+    ÔÇó verejna_zakazka.casti_verejne_zakazky.nazev_casti_verejne_zakazky    100.0%
+    ÔÇó verejna_zakazka.casti_verejne_zakazky.druh_casti_verejne_zakazky     100.0%
+    ÔÇó verejna_zakazka.casti_verejne_zakazky.predpokladana_hodnota_bude_uverejnena 100.0%
+    ÔÇó verejna_zakazka.casti_verejne_zakazky.predmet                        100.0%

@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "obdobi_od": null,
+    "obdobi_do": null,
+    "verze": null,
+    "filtrovano_datum": "2026-02-07T20:04:45.145273",
+    "puvodni_pocet_zakazek": 41960,
+    "filtrovanych_zakazek": 35,
+    "filtrovano_ict_datum": "2026-02-07T20:04:46.586044",
+    "pred_ict_filtrem": 35,
+    "po_ict_filtru": 1
+  },
+  "data": [
+    {
+      "verejna_zakazka": {
+        "casova_znacka": "2025-12-03T08:01:09",
+        "identifikator_NIPEZ": "RVZ2500219454",
+        "identifikator_v_elektronickem_nastroji": null,
+        "identifikatory_v_elektronickem_nastroji": [
+          {
+            "kod_nastroje": "VVZ",
+            "identifikator": "Z2025-064680"
+          }
+        ],
+        "interniIdentifikatorVerejneZakazkyPridelenyZadavatelem": null,
+        "nazev_verejne_zakazky": "New Tower Simulator ANS CR (project NETWOR)",
+        "predpokladana_hodnota_bez_DPH_v_CZK": 147000000,
+        "predpokladana_hodnota_bez_DPH": 147000000,
+        "predpokladana_hodnota_bude_uverejnena": true,
+        "predpokladana_hodnota_bez_DPH_mena": "CZK",
+        "predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH_v_CZK": null,
+        "predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH": null,
+        "predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH_mena": null,
+        "druh_verejne_zakazky": "Služby",
+        "vedlejsi_druhy_verejne_zakazky": [],
+        "rezim_verejne_zakazky": "Nadlimitní",
+        "rezim_dle_volby_zadavatele": null,
+        "predmet": {
+          "v_oblasti_obrany_a_bezpecnosti": false,
+          "popis_predmetu": "Předmětem plnění veřejné zakázky je nový věžový simulátor ŘLP ČR (projekt NETWOR), který poskytne Řízení letového provozu České republiky (ŘLP ČR), včetně Českého navigačního institutu (CANI), vysoce spolehlivý, flexibilní a moderní 3D simulátor TWR, který splní různé výcvikové a další potřeby.\nVýcvik ŘLP ČR bude zahrnovat následující typy výcviku:\n- úvodní výcvik (základní a kvalifikační výcvik),\n- stanovištní výcvik (přechodný a předběžný výcvik OJT),\n- pokračovací výcvik (opakovací a přeškolovací výcvik),\n- výcvik pro případ nouze,\n- výcvik instruktorů letového provozu a hodnotitelů,\n- výcvik vojenských řídících letového provozu. Tyto výcviky budou probíhat s využitím několika různých letištních prostředí:\n- LKPR (včetně stimulovaného systému ATM) - řízeno řídícími letového provozu ŘLZ ČR,\n- LKKV, LKTB, LKMT a případně LKCS (včetně emulovaného systému ATM a případně systému Remote Tower) - řízeno řídícími letového provozu ŘLZ ČR,\n- LKKB, LKPD, LKCV, LKNA - řízeno vojenskými řídícími letového provozu,\n- umělá letiště založená na LKPR a LKTB - používaná pro externí klienty CANI,\n- další letiště vyžádaná externími klienty CANI.\nSoučasně by mělo být zajištěno testování nových postupů, testování nových systémů ATM a změn systémů, testování změn uspořádání letiště a seznámení ostatních uživatelů letiště s provozem v neveřejné části letiště.\n\n",
+          "hlavni_kod_CPV": "72268000",
+          "mista_plneni": [
+            {
+              "nuts": "CZ020",
+              "kod_zeme_mista_plneni": "CZE",
+              "misto_plneni_jine": null,
+              "dalsi_informace_o_miste_plneni": null
+            }
+          ],
+          "vedlejsi_kod_CPV": [],
+          "polozky_predmetu": []
+        },
+        "oduvodneni_nerozdeleni_nadlimitni_verejne_zakazky_na_casti": null,
+        "typ_verejne_zakazky_dle_vyse_predpokladane_hodnoty": "Nadlimitní veřejná zakázka",
+        "hodnoty_koncese": [],
+        "casti_verejne_zakazky": [
+          {
+            "identifikator_NIPEZ": "RVZ2500219454/001",
+            "identifikator_v_elektronickem_nastroji": null,
+            "identifikatory_v_elektronickem_nastroji": [
+              {
+                "kod_nastroje": "VVZ",
+                "identifikator": "LOT-0001"
+              }
+            ],
+            "interniIdentifikatorVerejneZakazkyPridelenyZadavatelem": ".",
+            "nazev_casti_verejne_zakazky": "New Tower Simulator ANS CR (project NETWOR)",
+            "druh_casti_verejne_zakazky": "Služby",
+            "vedlejsi_druhy_casti_verejne_zakazky": [],
+            "rezim_casti_verejne_zakazky": null,
+            "rezim_dle_volby_zadavatele": null,
+            "predpokladana_hodnota_casti_bez_DPH_v_CZK": null,
+            "predpokladana_hodnota_casti_bez_DPH": 147000000,
+            "predpokladana_hodnota_casti_bez_DPH_mena": "CZK",
+            "predpokladana_hodnota_bude_uverejnena": true,
+            "predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH_v_CZK": null,
+            "predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH": null,
+            "predpokladana_hodnota_vsech_verejnych_zakazek_ktere_mohou_byt_zadany_na_zaklade_ramcove_dohody_bez_DPH_mena": null,
+            "predmet": {
+              "v_oblasti_obrany_a_bezpecnosti": false,
+              "popis_predmetu": "Předmětem plnění veřejné zakázky je nový věžový simulátor ŘLP ČR (projekt NETWOR), který poskytne Řízení letového provozu České republiky (ŘLP ČR), včetně Českého navigačního institutu (CANI), vysoce spolehlivý, flexibilní a moderní 3D simulátor TWR, který splní různé výcvikové a další potřeby.\nVýcvik ŘLP ČR bude zahrnovat následující typy výcviku:\n- úvodní výcvik (základní a kvalifikační výcvik),\n- stanovištní výcvik (přechodný a předběžný výcvik OJT),\n- pokračovací výcvik (opakovací a přeškolovací výcvik),\n- výcvik pro případ nouze,\n- výcvik instruktorů letového provozu a hodnotitelů,\n- výcvik vojenských řídících letového provozu. Tyto výcviky budou probíhat s využitím několika různých letištních prostředí:\n- LKPR (včetně stimulovaného systému ATM) - řízeno řídícími letového provozu ŘLZ ČR,\n- LKKV, LKTB, LKMT a případně LKCS (včetně emulovaného systému ATM a případně systému Remote Tower) - řízeno řídícími letového provozu ŘLZ ČR,\n- LKKB, LKPD, LKCV, LKNA - řízeno vojenskými řídícími letového provozu,\n- umělá letiště založená na LKPR a LKTB - používaná pro externí klienty CANI,\n- další letiště vyžádaná externími klienty CANI.\nSoučasně by mělo být zajištěno testování nových postupů, testování nových systémů ATM a změn systémů, testování změn uspořádání letiště a seznámení ostatních uživatelů letiště s provozem v neveřejné části letiště.\n",
+              "hlavni_kod_CPV": "72268000",
+              "mista_plneni": [
+                {
+                  "nuts": "CZ020",
+                  "kod_zeme_mista_plneni": "CZE",
+                  "misto_plneni_jine": null,
+                  "dalsi_informace_o_miste_plneni": null
+                }
+              ],
+              "vedlejsi_kod_CPV": [],
+              "polozky_predmetu": []
+            },
+            "vyhrazena_zmena_zavazku": null,
+            "popis_vyhrazene_zmeny_zavazku": null,
+            "maximalni_mozny_pocet_prodlouzeni_smlouvy": null,
+            "popis_prodlouzeni": null,
+            "oduvodneni_pouziti_zjednoduseneho_rezimu": null,
+            "verejna_zakazka_je_alespon_castecne_financovana_z_prostredku_Evropske_unie": false,
+            "informace_o_financnich_prostredcich_EU": [],
+            "hodnoty_koncese": [],
+            "zadavaci_postup_pro_cast": {
+              "stav": null,
+              "kategorie_zadavaciho_postupu": null,
+              "druh_zadavaciho_postupu": "Otevřené řízení",
+              "evidence_vysledku_zadavaciho_postupu": null,
+              "duvod_pro_pouziti_vyjimky": null,
+              "identifikator_CELEX_pravniho_predpisu_EU": null,
+              "navaznost_na_vysledek_jineho_zadavaciho_postupu": null,
+              "popis_zadavaciho_postupu_v_pripade_ze_se_jedna_o_dobrovolne_uverejneni_v_TED": null,
+              "pravni_predpis_EU_na_zaklade_nehoz_probiha_zadavaci_postup": null,
+              "pravni_predpis_EU": "Spadá do působnosti Směrnice 2014/24/EU",
+              "datum_zahajeni_zadavaciho_postupu": "2025-11-19T13:14:45",
+              "datum_ukonceni_zadavaciho_postupu": null,
+              "zadavatel_si_vyhrazuje_pravo_zadat_verejnou_zakazku_na_zaklade_puvodnich_nabidek_bez_dalsich_jednani": null,
+              "udeleni_cen_odmen_jinych_plateb": null,
+              "hodnota_cen_odmen_jinych_plateb": null,
+              "hodnota_cen_odmen_jinych_plateb_mena": null,
+              "dalsi_informace_v_souvislosti_s_odmenami": null,
+              "ocenovane_umisteni": null,
+              "plneni_zakazky_vyhrazeno_v_ramci_programu_chranenych_zamestnani": false,
+              "pocet_zaslanych_zaevidovanych_vysvetleni_zadavaci_dokumentace": null,
+              "zkraceni_lhuty": false,
+              "oduvodneni_pouziti_zkraceni_lhuty_v_zadavacim_postupu": null,
+              "oduvodneni_pouziti_jrsu_nebo_soutezniho_dialogu": null,
+              "je_pozadovana_pravni_forma_seskupeni_dodavatelu_jimz_bude_verejna_zakazka_zadana": null,
+              "pravni_forma_kterou_musi_mit_seskupeni_dodavatelu_jimz_bude_verejna_zakazka_zadana": null,
+              "verejna_zakazka_je_vhodna_pro_male_a_stredni_podniky": null,
+              "presne_informace_o_lhutach_pro_prezkumna_rizeni": null,
+              "pusobnost_mezinarodni_dohody_o_verejnych_zakazkach": true,
+              "plneni_teto_verejne_zakazky_je_vyhrazeno_v_ramci_programu_chranenych_zamestnani": false,
+              "dalsi_informace": null,
+              "narizeni_o_zahranicnich_subvencich": null,
+              "odkaz_na_profil": null,
+              "verejny_ZP": null,
+              "informace_o_ramcove_dohode": {
+                "zpusob_zadavani_verejnych_zakazek_na_zaklade_ramcove_dohody": null,
+                "ramcova_dohoda_ma_stanoven_maximalni_pocet_ucastniku": null,
+                "predpokladany_maximalni_pocet_ucastniku_ramcove_dohody": null,
+                "oduvodneni_doby_trvani_ramcove_dohody": null,
+                "datum_zacatku_doby_trvani": null,
+                "datum_konce_doby_trvani": null,
+                "doba_trvani": null,
+                "doba_trvani_jednotka": null,
+                "doba_trvani_jine": null,
+                "typ_ramcove_dohody": null
+              },
+              "informace_o_zadavacich_dokumentacich": [
+                {
+                  "pristup_k_zadavaci_dokumentaci_je_omezen": false,
+                  "oduvodneni_omezeneho_pristupu_k_zadavaci_dokumentaci": null,
+                  "informace_o_pristupu_k_zadavaci_dokumentaci_jsou_na": null,
+                  "zadavaci_dokumentace_je_dostupna_na": "https://nen.nipez.cz/profil/RLPCR"
+                }
+              ],
+              "informace_o_dalsi_fazi_vicefazoveho_zadavaciho_postupu": [],
+              "specifikace_podani": {
+                "nabidky_musi_byt_podany_ve_forme_elektronickych_katalogu_nebo_musi_zahrnovat_elektronicky_katalog": false,
+                "jistota": null,
+                "popis_jistoty": null,
+                "zadavatel_provede_nakup_z_elektronickych_katalogu_vice_dodavatelu": null,
+                "povoleni_odtajneni_podani_pred_vyprsenim_lhuty": null,
+                "budou_prijimany_varianty_nabidky": null,
+                "zpusob_podani": "Elektronicky",
+                "typ_aktualniho_podani": null,
+                "jazyk_podani": "čeština",
+                "internetova_adresa_pro_podani": "https://nen.nipez.cz/profil/RLPCR",
+                "oduvodneni_nemoznosti_elektronickeho_podavani": null,
+                "popis_listinneho_podani": null,
+                "je_pozadovan_uznavany_elektronicky_podpis_nebo_pecet": null
+              },
+              "oduvodneni_jednaciho_rizeni_bez_uverejneni": [],
+              "kriteria_kvalifikace": {
+                "kriteria_kvalifikace": [],
+                "zakladni_zpusobilost": null,
+                "profesni_zpusobilost": null,
+                "ekonomicka_kvalifikace": null,
+                "technicka_kvalifikace": null,
+                "zdroj_kriterii_kvalifikace": "Zadávací dokumentace",
+                "zakladni_zpusobilost_a_duvody_pro_vylouceni": [
+                  "Zadávací dokumentace"
+                ]
+              },
+              "lhuty": [
+                {
+                  "druh_lhuty": "Lhůta pro podání nabídky",
+                  "datum_a_cas_zacatku_lhuty": null,
+                  "datum_a_cas_konce_lhuty": "2026-03-03T10:00:00",
+                  "doba_trvani_lhuty": null,
+                  "doba_trvani_lhuty_jednotka": null,
+                  "aktivni": null,
+                  "identifikator": null
+                }
+              ],
+              "doba_trvani": {
+                "datum_zacatku_doby_trvani": "2026-05-01T00:00:00",
+                "datum_konce_doby_trvani": "2041-05-01T00:00:00",
+                "doba_trvani": null,
+                "doba_trvani_jednotka": null,
+                "doba_trvani_jine": null
+              },
+              "dalsi_pozadavky": {
+                "osvedceni_o_vzdelani_a_odborne_kvalifikaci_pracovniku": null,
+                "je_pozadovana_bezpecnostni_proverka": null,
+                "informace_o_bezpecnostni_proverce": null
+              },
+              "obchodni_nebo_jine_podminky": {
+                "budou_pouzivany_elektronicke_objednavky": true,
+                "bude_pouzita_elektronicka_platba": true,
+                "hlavni_podminky_financovani_a_platebni_podminky_pripadne_odkaz_na_prislusna_ustanoveni_ktera_tyto_podminky_upravuji": null,
+                "dalsi_zvlastni_podminky_kterym_podleha_plneni_zakazky_predevsim_pokud_jde_o_zabezpeceni_dodavek_a_duvernost_informaci": null
+              },
+              "podane_nabidky_nebo_zadosti_o_ucast": [],
+              "hodnoty_podanych_nabidek": null,
+              "informace_o_otevirani_podani": [],
+              "pravidla_pro_hodnoceni": {
+                "pouziti_automatickeho_losu_v_pripade_shodneho_hodnoceni": null,
+                "pouziti_elektronicke_aukce_v_zadavacim_postupu": false,
+                "dalsi_informace_o_pouziti_elektronicke_aukce": null,
+                "internetova_adresa_elektronicke_aukce": null,
+                "ekonomicka_vyhodnost": null,
+                "metoda_hodnoceni": null,
+                "vzorec_pro_hodnoceni": null,
+                "pevna_cena_za_jednotku_nebo_celkem": null,
+                "hodnota_pevne_ceny_bez_DPH": null,
+                "hodnota_pevne_ceny_s_DPH": null,
+                "mena": null,
+                "hodnoceni_nabidkove_ceny": null,
+                "kriteria_pro_hodnoceni_nabidek_nebo_navrhu": []
+              },
+              "ucastnici": [],
+              "ucastnici_jimz_zanikla_ucast_v_zadavacim_postupu": [],
+              "stret_zajmu": [],
+              "povinnosti_v_souvislosti_s_vyuzitim_poddodavatele": [],
+              "spolecne_zadavani_zadavatelu_z_ruznych_statu": [
+                {
+                  "rozhodny_pravni_predpis_pro_zadavani_verejne_zakazky_a_jeho_prezkum": "CrossBorderLaw",
+                  "popis": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+                }
+              ],
+              "namitky": [],
+              "vysledek": {
+                "vybrani_dodavatele_zadavaciho_postupu": [],
+                "smlouva": [],
+                "udaje_o_nizkoemisnich_vozidlech": [],
+                "vysledek_ukonceni_zadavaciho_postupu": null,
+                "oduvodneni_zruseni_zadavaciho_postupu": null,
+                "datum_a_cas_zruseni_postupu": "0001-01-01T00:00:00"
+              },
+              "zadavani_inovaci": [],
+              "socialne_odpovedne_zadavani": [
+                "Pracovní příležitosti pro dlouhodobě nezaměstnané osoby, znevýhodněné osoby a/nebo osoby s postižením"
+              ],
+              "environmentalni_zadavani": [],
+              "enviromentalni_zadavani_podle_kriterii": [],
+              "popis_odpovedneho_zadavani": [
+                {
+                  "popis_odpovedneho_zadavani": "Na plnění VZ se mohou podílet osoby znevýhodněné na trhu práce, VZ lze plnit prostřednictvím malých a středních podniků bez zvláštních opatření, lze uspořádat exkurze pro veřejnost a školy v rámci plnění VZ",
+                  "typ_odpovedneho_zadavani": "Sociálně odpovědné zadávání",
+                  "oduvodneni_nezohledneni_odpovedneho_zadavani": null
+                }
+              ],
+              "informace_o_danovych_pravnich_predpisech": [],
+              "informace_o_pracovnepravnich_predpisech": [],
+              "informace_o_predpisech_v_oblasti_zivotniho_prostredi": [],
+              "uplatneni_podminek_pristupnosti_pro_osoby_s_postizenim_v_technickych_specifikacich": [],
+              "dokumenty": [],
+              "zadavatel_postupuje_dle_parag_61_odst_3_ZZVZ": false,
+              "nestandardni_stavy": []
+            }
+          }
+        ],
+        "zadavaci_postupy": [
+          {
+            "zadavatel_zadavaciho_postupu": {
+              "pravidla_pro_postup_zadavatele": null,
+              "zadavatele": [
+                {
+                  "kategorie_zadavatele": "Jiná právnická osoba (dle § 4 odst. 1 písm. e) zákona č. 134/2016 Sb.)",
+                  "role_zadavatele": null,
+                  "hlavni_predmet_cinnosti_verejneho_zadavatele": "Služby pro širokou veřejnost",
+                  "predmet_relevantni_cinnosti": null,
+                  "zadava_zadavaci_postup": null,
+                  "adresa_profilu": "https://nen.nipez.cz/profil/RLPCR",
+                  "subjekt": {
+                    "nazev_subjektu": "Řízení letového provozu České republiky, státní podnik (ŘLP ČR, s.p.)",
+                    "ico": "49710371",
+                    "jiny_identifikator": null,
+                    "sidlo": null,
+                    "kod_NUTS": "CZ020",
+                    "maly_a_stredni_podnik": null,
+                    "nipez_id_subjektu": null,
+                    "identifikator_v_elektronickem_nastroji": null,
+                    "stat_adresa": null
+                  },
+                  "provozni_jednotka_s_funkcni_samostatnosti": {
+                    "nazev_provozni_jednotky_s_funkcni_samostatnosti": null,
+                    "sidlo": null,
+                    "kod_NUTS": null
+                  }
+                }
+              ]
+            },
+            "evidencni_cislo_zadavaciho_postupu_ve_VVZ": null,
+            "evidencni_cislo_zadavaciho_postupu_ve_vestniku_verejnych_zakazek": "Z2025-064680",
+            "do_kterych_casti_muze_dodavatel_podat_nabidku": null,
+            "pocetCastiDoKterychMuzeBytNabidkaPodana": null,
+            "nejvyssiPocetCastiKtereMohouBytZadanyJednomuUchazeci": null,
+            "dalsi_informace": null,
+            "uverejnovaci_formulare": [
+              {
+                "evidencni_cislo_formulare": "F2025-067005",
+                "datum_a_cas_odeslani_k_uverejneni": "2025-12-01T15:07:51",
+                "datum_a_cas_uverejneni_ve_VVZ": "2025-12-03T08:01:09",
+                "datum_a_cas_odeslani_do_TED": "2025-12-01T15:07:51",
+                "datum_a_cas_uverejneni_v_TED": "2025-12-03T05:00:06",
+                "identifikator_oznameni_verze": null,
+                "typ_formulare": "Zahájení",
+                "typ_oznameni": "16 – Oznámení o zahájení zadávacího řízení – obecná veřejná zakázka",
+                "verze_oznameni": null,
+                "hodnota_vsech_verejnych_zakazek_uvedenych_v_oznameni": null,
+                "hodnota_vsech_verejnych_zakazek_uvedenych_v_oznameni_mena": null,
+                "opravy": [
+                  {
+                    "oduvodneni_opravy": "Oprava chyb zadavatele",
+                    "popis_duvodu_opravy": "Zadavatel opomněl uveřejnit veškeré přílohy zadávací dokumentace, konkrétně návrh smlouvy na veřejnou zakázku. ",
+                    "popis_opravy": "Příloha - návrh smlouvy na veřejnou zakázku  byla uveřejněna dodatečně a lhůta pro podání nabídek byla prodloužena o celou původní délku.",
+                    "oprava_zadavaci_dokumentace_nebo_souteznich_podminek": false,
+                    "datum_a_cas_kdy_byla_zadavaci_dokumentace_opravena": null
+                  }
+                ]
+              },
+              {
+                "evidencni_cislo_formulare": "F2025-064680",
+                "datum_a_cas_odeslani_k_uverejneni": "2025-11-19T13:14:46",
+                "datum_a_cas_uverejneni_ve_VVZ": "2025-11-20T08:00:50",
+                "datum_a_cas_odeslani_do_TED": "2025-11-19T13:14:45",
+                "datum_a_cas_uverejneni_v_TED": "2025-11-20T06:00:11",
+                "identifikator_oznameni_verze": null,
+                "typ_formulare": "Zahájení",
+                "typ_oznameni": "16 – Oznámení o zahájení zadávacího řízení – obecná veřejná zakázka",
+                "verze_oznameni": null,
+                "hodnota_vsech_verejnych_zakazek_uvedenych_v_oznameni": null,
+                "hodnota_vsech_verejnych_zakazek_uvedenych_v_oznameni_mena": null,
+                "opravy": []
+              }
+            ],
+            "zadavaci_postupy_pro_casti": [
+              {
+                "identifikator_NIPEZ": "RVZ2500219454/001",
+                "identifikator_v_elektronickem_nastroji": null,
+                "identifikatory_v_elektronickem_nastroji": [
+                  {
+                    "kod_nastroje": "VVZ",
+                    "identifikator": "LOT-0001"
+                  }
+                ]
+              }
+            ],
+            "externi_administrator": [],
+            "identifikator_NIPEZ": "ZP/RVZ2500219454/001",
+            "identifikator_v_elektronickem_nastroji": null,
+            "identifikatory_v_elektronickem_nastroji": [
+              {
+                "kod_nastroje": "VVZ",
+                "identifikator": "Z2025-064680"
+              }
+            ]
+          }
+        ]
+      },
+      "historie_lhut": [
+        {
+          "identifikator_NIPEZ_ke_kteremu_se_zaznamy_vztahuji": "RVZ2500219454/001",
+          "datum_a_cas_zaznamu": "2025-11-20T08:00:50",
+          "zaznamy": [
+            {
+              "druh_lhuty": "Lhůta pro podání nabídky",
+              "datum_a_cas_zacatku_lhuty": null,
+              "datum_a_cas_konce_lhuty": "2026-02-20T10:00:00",
+              "doba_trvani_lhuty": null,
+              "doba_trvani_lhuty_jednotka": null,
+              "aktivni": null,
+              "identifikator": null
+            }
+          ]
+        },
+        {
+          "identifikator_NIPEZ_ke_kteremu_se_zaznamy_vztahuji": "RVZ2500219454/001",
+          "datum_a_cas_zaznamu": "2025-12-03T08:01:09",
+          "zaznamy": [
+            {
+              "druh_lhuty": "Lhůta pro podání nabídky",
+              "datum_a_cas_zacatku_lhuty": null,
+              "datum_a_cas_konce_lhuty": "2026-03-03T10:00:00",
+              "doba_trvani_lhuty": null,
+              "doba_trvani_lhuty_jednotka": null,
+              "aktivni": null,
+              "identifikator": null
+            }
+          ]
+        }
+      ],
+      "zdroj_dat": "Věstník veřejných zakázek"
+    }
+  ]
+}

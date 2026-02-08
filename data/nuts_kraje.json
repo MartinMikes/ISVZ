@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "description": "Číselník NUTS → Kraj pro ČR",
+    "source": "https://portal.uur.cz/spravni-usporadani-cr-organy-uzemniho-planovani/nuts.asp",
+    "created": "2026-02-07",
+    "version": "1.0"
+  },
+  "nuts_kraje": {
+    "CZ010": "Hlavní město Praha",
+    "CZ020": "Středočeský kraj",
+    "CZ031": "Jihočeský kraj",
+    "CZ032": "Plzeňský kraj",
+    "CZ041": "Karlovarský kraj",
+    "CZ042": "Ústecký kraj",
+    "CZ051": "Liberecký kraj",
+    "CZ052": "Královéhradecký kraj",
+    "CZ053": "Pardubický kraj",
+    "CZ063": "Kraj Vysočina",
+    "CZ064": "Jihomoravský kraj",
+    "CZ071": "Olomoucký kraj",
+    "CZ072": "Zlínský kraj",
+    "CZ080": "Moravskoslezský kraj"
+  },
+  "nuts_regiony": {
+    "CZ01": "Praha",
+    "CZ02": "Střední Čechy",
+    "CZ03": "Jihozápad",
+    "CZ04": "Severozápad",
+    "CZ05": "Severovýchod",
+    "CZ06": "Jihovýchod",
+    "CZ07": "Střední Morava",
+    "CZ08": "Moravskoslezsko"
+  }
+}

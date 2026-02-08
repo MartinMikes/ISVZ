@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ISVZ Data files
+# Ignorovat všechny velké originální JSON soubory
+data/VZ/*.json
+
+# VÝJIMKY - tyto soubory GIT trackovat (jsou menší a důležité)
+!data/VZ/*-ICT.json
+!data/VZ/*-OPEN.json
+
+# Ignorovat ostatní kategorie (nejsou ICT relevantní)
+data/DNS/*.json
+!data/DNS/*-ICT.json
+
+data/SON/
+data/SK/
+data/RVP/
+
+# Output soubory - ignorovat reporty (generují se automaticky)
+output/reports/
+output/csv/
+
+# Číselníky JSON - velké, ale můžeme regenerovat
+output/ciselniky/*.json
+
+# Dokumentace číselníků je ve docs/, takže output/ nemusíme trackovat
+# Pokud chceme trackovat i MD soubor s číselníky:
+!output/ciselniky/*.md
