@@ -1,53 +1,194 @@
-# Struktura souborů projektu ISVZ
+# Struktura projektu ISVZ
 
-## 📂 Přehled adresářů
+Přehled aktivních souborů a složek pro měsíční zpracování veřejných zakázek.
+
+## 📂 Struktura adresářů
 
 ```
 ISVZ/
-├── data/                           # 💾 Datové soubory (ne v Git)
+├── 📄 README.md                    # Hlavní dokumentace
+├── 📄 QUICKSTART.md                # ⭐ Rychlý start pro nové uživatele
+├── 🔄 monthly_process.py           # Orchestrace měsíčního zpracování
+├── 📥 download_vz.ps1              # PowerShell skript pro stahování VZ
+│
+├── 📁 scripts/                     # 🔧 Aktivní skripty (používané monthly_process.py)
+│   ├── filter_open_tenders.py          # Krok 1: Filtrování otevřených VZ
+│   ├── filter_ict_tenders.py           # Krok 2: Filtrování ICT z VZ
+│   ├── filter_dns_ict.py               # Krok 3: Filtrování ICT z DNS
+│   ├── add_recommendations.py          # Krok 4: Přidání doporučení (1-5)
+│   └── generate_reports.py             # Krok 5: Generování MD + CSV reportů
+│
+├── 📁 docs/                        # 📖 Aktivní dokumentace
+│   ├── MONTHLY_README.md               # Měsíční workflow
+│   ├── REPORT_GENERATION.md            # Popis CSV a MD reportů (32 sloupců)
+│   ├── DOPORUCOVACI_SYSTEM.md          # Systém hodnocení (1-5)
+│   ├── POROVNANI_MESICU.md             # Rozdílové reporty
+│   ├── EXCEL_INTEGRACE.md              # Práce s CSV v Excelu
+│   ├── CISELNIKY_PREHLED.md            # Přehled číselníků
+│   ├── NUTS_KRAJE.md                   # Číselník NUTS → Kraje
+│   └── FILE_STRUCTURE.md               # Tento soubor
+│
+├── 📁 data/                        # 💾 Datové soubory (ne v Git)
 │   ├── VZ/                             # Veřejné zakázky
-│   │   ├── VZ-MM-YYYY.json
-│   │   ├── VZ-MM-YYYY-OPEN.json
-│   │   └── VZ-MM-YYYY-ICT.json
+│   │   ├── VZ-YYYY-MM.json                 # Originál (~1.3 GB)
+│   │   ├── VZ-YYYY-MM-OPEN.json            # Otevřené (~30 MB)
+│   │   └── VZ-YYYY-MM-ICT.json             # ICT s doporučením (~4 MB)
 │   ├── DNS/                            # Dynamické nákupní systémy
-│   │   ├── DNS-MM-YYYY.json
-│   │   └── DNS-MM-YYYY-ICT.json
+│   │   ├── DNS-YYYY-MM.json                # Originál (~3 MB)
+│   │   └── DNS-YYYY-MM-ICT.json            # ICT (~200 KB)
 │   ├── SON/                            # Soutěže o návrh
 │   ├── SK/                             # Systémy kvalifikace
 │   └── RVP/                            # Výběr poddodavatelů
 │
-├── output/                         # 📊 Generované výstupy
-│   ├── ciselniky/
-│   │   ├── isvz_ciselniky.json
-│   │   └── isvz_ciselniky.md (viz docs/)
-│   └── reports/
-│       ├── DIFF_VZ_*.md
-│       └── DIFF_DNS_*.md
+├── 📁 output/                      # 📊 Generované výstupy
+│   ├── reports/                        # Markdown reporty
+│   │   ├── VZ-ICT_YYYY-MM.md               # ⭐ Tabulkový souhrn (nejnovější)
+│   │   ├── VZ-OPEN_YYYY-MM.md              # ⭐ Tabulkový souhrn (nejnovější)
+│   │   ├── DNS-ICT_YYYY-MM.md              # ⭐ Tabulkový souhrn (nejnovější)
+│   │   ├── DIFF_VZ_MM-YYYY.md              # Rozdílový report VZ
+│   │   ├── DIFF_DNS_MM-YYYY.md             # Rozdílový report DNS
+│   │   └── YYYY/MM/                        # Detailní měsíční reporty
+│   │       ├── VZ-OPEN_YYYY-MM.md
+│   │       ├── VZ-ICT_YYYY-MM.md
+│   │       └── DNS-ICT_YYYY-MM.md
+│   └── csv/                            # CSV exporty
+│       ├── VZ-ICT.csv                      # ⭐ Nejnovější (pro Excel)
+│       ├── VZ-OPEN.csv                     # ⭐ Nejnovější (pro Excel)
+│       ├── DNS-ICT.csv                     # ⭐ Nejnovější (pro Excel)
+│       └── YYYY/MM/                        # CSV archiv
+│           ├── VZ-OPEN_YYYY-MM.csv
+│           ├── VZ-ICT_YYYY-MM.csv
+│           └── DNS-ICT_YYYY-MM.csv
 │
-├── scripts/                        # 🔧 Aktivní skripty
-├── docs/                           # 📖 Dokumentace
-├── archive/                        # 📦 Staré skripty
-└── [root soubory]                  # README, monthly_process.py, download_vz.ps1
+└── 📁 archive/                     # 📦 Historické/utility soubory
+    ├── docs/                           # Jednou použité analýzy
+    │   ├── isvz_datamodel.md               # Počáteční analýza dat
+    │   ├── isvz_stavy_filtrovani.md        # Analýza stavů
+    │   ├── isvz_ciselniky.md               # Kompletní číselníky
+    │   ├── CATEGORY_ANALYSIS.md            # Analýza kategorií
+    │   ├── DOPORUCENA_NEVYUZITA_POLE.md    # Analýza polí
+    │   └── NAMING_CONVENTION_CHANGE.md     # Historie změny názvů
+    └── scripts/                        # Utility skripty
+        ├── show_ict_tenders.py             # Konzolový view
+        ├── extract_codebooks.py            # Extrakce číselníků
+        ├── explore_other_categories.py     # Analýza kategorií
+        └── analyze_unused_fields.py        # Analýza JSON polí
 ```
-├── reports/                # 📊 Rozdílové reporty
-│   ├── DIFF_VZ_MM1-YY1_vs_MM2-YY2.md
-│   └── DIFF_DNS_MM1-YY1_vs_MM2-YY2.md
-│
-└── [skripty a dokumentace] # Viz níže
+
+## 🔄 Workflow měsíčního zpracování
+
+```
+┌─────────────────┐
+│  1. STAHOVÁNÍ   │  download_vz.ps1 + monthly_process.py --download
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────────────────────────────────────────────────┐
+│  2. ZPRACOVÁNÍ (monthly_process.py)                         │
+│                                                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ Krok 1: filter_open_tenders.py                       │  │
+│  │         VZ → VZ-OPEN (970 zakázek)                   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│           │                                                  │
+│           ▼                                                  │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ Krok 2: filter_ict_tenders.py                        │  │
+│  │         VZ-OPEN → VZ-ICT (145 zakázek)               │  │
+│  └──────────────────────────────────────────────────────┘  │
+│           │                                                  │
+│           ▼                                                  │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ Krok 3: filter_dns_ict.py                            │  │
+│  │         DNS → DNS-ICT (14 zakázek)                   │  │
+│  └──────────────────────────────────────────────────────┘  │
+│           │                                                  │
+│           ▼                                                  │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ Krok 4: add_recommendations.py                       │  │
+│  │         Přidá doporučení 1-5 ⭐                       │  │
+│  └──────────────────────────────────────────────────────┘  │
+│           │                                                  │
+│           ▼                                                  │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ Krok 5: generate_reports.py                          │  │
+│  │         Vytvoří MD + CSV reporty                     │  │
+│  └──────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+         │
+         ▼
+┌─────────────────┐
+│  3. POROVNÁNÍ   │  monthly_process.py --compare
+└─────────────────┘
 ```
 
-## 🔧 Hlavní skripty
+## 📋 Klíčové soubory
 
-### Měsíční zpracování
+### Spustitelné skripty
 
-| Soubor | Účel | Použití |
-|--------|------|---------|
-| **monthly_process.py** | 🎯 Orchestrace celého procesu | `python monthly_process.py --year 2026 --month 1` |
-| **download_vz.ps1** | 📥 Stahování velkých VZ souborů | `.\download_vz.ps1 -Year 2026 -Month 1` |
+| Soubor | Účel | Použití | Doporučení |
+|--------|------|---------|------------|
+| **run_monthly.ps1** | ⭐ **Kompletní workflow (PowerShell)** | `.\run_monthly.ps1` | **NEJJEDNODUŠŠÍ!** |
+| **run_monthly.bat** | ⭐ **Kompletní workflow (Batch)** | Dvojklik nebo `run_monthly.bat` | Pro uživatele bez PowerShell |
+| **monthly_process.py** | 🎯 Python orchestrace | `python monthly_process.py --year 2026 --month 2` | Pokročilé použití |
+| **download_vz.ps1** | 📥 Stahování velkých VZ | `.\download_vz.ps1 -Year 2026 -Month 2` | Manuální stahování |
 
-### Filtrování
+**Nové řídící skripty (run_monthly):**
+- Automaticky stáhnou, zpracují a porovnají data
+- Barevný výstup a průběžné info
+- Statistiky a cesty k výstupům
+- Jeden příkaz = celý měsíční proces!
 
-| Soubor | Účel | Vstup | Výstup |
+### Dokumentace pro uživatele
+
+| Soubor | Pro koho | Obsah |
+|--------|----------|-------|
+| **QUICKSTART.md** | 🆕 Nové uživatele | Rychlý start, základní workflow |
+| **README.md** | Všechny | Kompletní přehled projektu |
+| **MONTHLY_README.md** | Pravidelné používání | Detailní měsíční workflow |
+| **REPORT_GENERATION.md** | Analýza dat | Struktura CSV (32 sloupců), MD reportů |
+| **DOPORUCOVACI_SYSTEM.md** | Práce s doporučením | Jak funguje hodnocení 1-5 |
+| **EXCEL_INTEGRACE.md** | Excel uživatele | Import CSV, filtry, kontingenční tabulky |
+
+## 🎯 Výstupní soubory
+
+### Nejdůležitější výstupy (pro pravidelnou práci)
+
+```
+output/csv/
+├── VZ-ICT.csv         ← ⭐ ZAČNI TADY (Excel ready)
+├── VZ-OPEN.csv        ← Všechny otevřené zakázky
+└── DNS-ICT.csv        ← ICT z dynamických systémů
+
+output/reports/
+├── VZ-ICT_2026-02.md  ← ⭐ Tabulkový souhrn
+└── DIFF_VZ_02-2026.md ← Co je nového
+```
+
+### Archiv (historie)
+
+```
+output/csv/2026/02/    ← CSV s datem (archiv)
+output/reports/2026/02/ ← Detailní MD reporty
+```
+
+## 💡 Poznámky
+
+**Soubory v Git:**
+- ✅ README, dokumentace, skripty
+- ❌ data/ - příliš velké
+- ❌ output/ - generované
+- ❌ __pycache__/ - Python cache
+
+**Jmenná konvence:**
+- Formát: `KATEGORIE-YYYY-MM.json`
+- Přípony: `-OPEN`, `-ICT` pro vyfiltrované
+- Výhoda: Chronologické řazení
+
+**Archiv:**
+- Obsahuje historické analýzy a utility
+- Není nutné pro běžnou práci
+- Ponecháno pro referenci
 |--------|------|-------|--------|
 | **filter_open_tenders.py** | 🔍 Filtruje otevřené VZ zakázky | data/VZ/VZ-MM-YYYY.json | data/VZ/VZ-MM-YYYY-OPEN.json |
 | **filter_ict_tenders.py** | 💻 Filtruje ICT z VZ | data/VZ/VZ-MM-YYYY-OPEN.json | data/VZ/VZ-MM-YYYY-ICT.json |

@@ -1,204 +1,291 @@
 # ISVZ Analýza ICT zakázek
 
-Nástroje pro filtrování a analýzu dat z Informačního systému o veřejných zakázkách (ISVZ NIPEZ) se zaměřením na **otevřené ICT zakázky** vhodné pro programátory a vývojáře.
+Automatizované nástroje pro filtrování a analýzu dat z **Informačního systému o veřejných zakázkách (ISVZ NIPEZ)** se zaměřením na **otevřené ICT zakázky** vhodné pro programátory a vývojáře.
 
-## Open Data ISZV (Informační systém o veřejných zakázkách)
+## 🎯 Co tento nástroj dělá?
 
-Na webu [ISVZ](https://isvz.nipez.cz/opendata/nova/2026/kategorie) (pro rok 2026) jsou uvedeny tyto kategorie JSON souborů:
+**Měsíčně stahuje a zpracovává** veřejné zakázky:
 
-| **Zkratka** | **Kategorie** | **JSON soubor na portálu ISVZ** | **Přejmenovaný JSON po stažení** |
-|---------|-----------|-------------|-------------|
-| **VZ** | Veřejná zakázka | `VZ-01-2026.json` | `VZ-2026-01.json` |
-| **DNS** | Dynamický nákupní systém | `DNS-01-2026.json` | `DNS-2026-01.json` |
-| **SON** | Soutěž o návrh | `SON-01-2026.json` | `SON-2026-01.json` |
-| **SK** | Systém kvalifikace | `SK-01-2026.json` | `SK-2026-01.json` |
-| **RVP** | Řízení na výběr poddodavatele | `RVP-01-2026.json` | `RVP-2026-01.json` |
+1. **Filtruje otevřené zakázky** (~970 z 71 000) - pouze ty, kde můžete podat nabídku
+2. **Vybírá ICT zakázky** (~145 zakázek) - programování, web, software, IT služby  
+3. **Hodnotí technologickou shodu** (1-5 ⭐) - .NET, React, SharePoint, Power Platform...
+4. **Generuje přehledy** - Markdown reporty a CSV pro Excel
+5. **Porovnává měsíce** - co je nového, co se změnilo
 
-Názvy JSON souborů mají po stažení a změně jmennou konvenci [KATEGORIE]-[YYYY]-[MM].json, kde:
+## ⚡ Rychlý start
 
-- **KATEGORIE** je 2-3 písmenná zkratka kategorie uvedená v tabulce výše
-- **YYYY** je rok vypublikování JSON souboru
-- **MM** je měsíc vypublikování JSON souboru
+**Nejjednodušší způsob (NOVÉ!):**
 
-**Poznámka:** Toto pořadí (YYYY-MM) zajišťuje správné chronologické řazení souborů.
+```powershell
+# PowerShell - jeden příkaz pro všechno
+.\run_monthly.ps1
+
+# Nebo Batch (dvojklik)
+run_monthly.bat
+```
+
+Hotovo! Skripty automaticky stáhnou, zpracují a porovnají data.
+
+---
+
+**Manuální způsob (3 příkazy):**
+
+```powershell
+# 1. Stáhnout data
+.\download_vz.ps1 -Year 2026 -Month 2
+python monthly_process.py --year 2026 --month 2 --download
+
+# 2. Zpracovat (5 kroků: filtr OPEN → ICT → doporučení → reporty)
+python monthly_process.py --year 2026 --month 2
+
+# 3. Porovnat s minulým měsícem
+python monthly_process.py --compare 2026 2
+```
+
+**Výstupy:**
+- 📊 `output/csv/VZ-ICT.csv` - otevřít v Excelu, filtrovat, analyzovat
+- 📝 `output/reports/VZ-ICT_2026-02.md` - přehled všech zakázek
+- 🔍 `output/reports/DIFF_VZ_02-2026.md` - co je nového
+
+## 📊 Příklad statistik (leden 2026)
+
+| Kategorie | Počet | Hodnota |
+|-----------|-------|---------|
+| **Celkem zakázek v ISVZ** | 71 377 | - |
+| **Otevřené zakázky** | 970 (1.4%) | 91.7 mld Kč |
+| **ICT zakázky** | 145 (15% z otevřených) | 2.75 mld Kč |
+| **⭐⭐⭐⭐⭐ Top shoda** | 9 (6.2%) | 66 mil Kč |
+| **⭐⭐⭐⭐ Silná shoda** | 62 (42.8%) | 1.41 mld Kč |
+
+**Průměrná hodnota ICT zakázky:** 19 mil Kč
 
 ## 📁 Struktura projektu
 
 ```
 ISVZ/
-├── README.md                      # Hlavní dokumentace
-├── monthly_process.py             # 🔄 Orchestrace měsíčního zpracování
-├── download_vz.ps1                # 📥 PowerShell skript pro stahování
+├── 📄 README.md                    # Tento soubor
+├── 📄 QUICKSTART.md                # ⭐ Začni tady! (rychlý start)
+├── 🔄 monthly_process.py           # Hlavní orchestrace
+├── 📥 download_vz.ps1              # Stahování VZ (PowerShell)
+├── ⚡ run_monthly.ps1               # ⭐ NOVÉ! Kompletní workflow (PowerShell)
+├── ⚡ run_monthly.bat               # ⭐ NOVÉ! Kompletní workflow (Batch)
 │
-├── scripts/                       # 🔧 Aktivní skripty
-│   ├── filter_open_tenders.py         # Filtrování otevřených VZ zakázek
-│   ├── filter_ict_tenders.py          # Filtrování ICT z VZ
-│   ├── filter_dns_ict.py              # Filtrování ICT z DNS
-│   ├── show_ict_tenders.py            # Zobrazení přehledu ICT zakázek
-│   ├── extract_codebooks.py           # Extrakce číselníků
-│   └── explore_other_categories.py    # Průzkum kategorií
+├── 📁 scripts/                     # 🔧 Zpracovací skripty (5 kroků)
+│   ├── filter_open_tenders.py          # Krok 1: Otevřené VZ
+│   ├── filter_ict_tenders.py           # Krok 2: ICT z VZ
+│   ├── filter_dns_ict.py               # Krok 3: ICT z DNS
+│   ├── add_recommendations.py          # Krok 4: Doporučení 1-5
+│   └── generate_reports.py             # Krok 5: MD + CSV reporty
 │
-├── docs/                          # 📖 Dokumentace
-│   ├── isvz_datamodel.md              # Datový model ISVZ
-│   ├── isvz_stavy_filtrovani.md       # Analýza stavů
-│   ├── isvz_ciselniky.md              # Kompletní číselníky
-│   ├── CISELNIKY_PREHLED.md           # Rychlý přehled číselníků
-│   ├── CATEGORY_ANALYSIS.md           # Analýza kategorií
-│   ├── MONTHLY_README.md              # Měsíční automatizace
-│   └── FILE_STRUCTURE.md              # Struktura projektu
+├── 📁 docs/                        # 📖 Dokumentace
+│   ├── MONTHLY_README.md               # Měsíční workflow
+│   ├── REPORT_GENERATION.md            # CSV struktura (32 sloupců)
+│   ├── DOPORUCOVACI_SYSTEM.md          # Systém hodnocení
+│   ├── POROVNANI_MESICU.md             # Diff reporty
+│   ├── EXCEL_INTEGRACE.md              # Excel návod
+│   └── ...                             # Další dokumenty
 │
-├── data/                          # 💾 Datové soubory (ne v Git)
-│   ├── nuts_kraje.json              # 🗺️ Číselník NUTS → Kraj
-│   ├── VZ/                            # Veřejné zakázky
-│   │   ├── VZ-2026-01.json                # Původní dataset (~1.3 GB)
-│   │   ├── VZ-2026-01-OPEN.json           # Otevřené zakázky (28.6 MB)
-│   │   └── VZ-2026-01-ICT.json            # ICT zakázky (4.0 MB)
-│   ├── DNS/                           # Dynamické nákupní systémy
-│   │   ├── DNS-2026-01.json               # DNS dataset (~4 MB)
-│   │   └── DNS-2026-01-ICT.json           # ICT DNS (~500 KB)
-│   ├── SON/                           # Soutěže o návrh
-│   ├── SK/                            # Systémy kvalifikace
-│   └── RVP/                           # Výběr poddodavatelů
+├── 📁 data/                        # 💾 Data (ne v Git)
+│   ├── VZ/VZ-2026-01.json              # Originál (1.3 GB)
+│   ├── VZ/VZ-2026-01-OPEN.json         # Otevřené (30 MB)
+│   ├── VZ/VZ-2026-01-ICT.json          # ICT s doporučením (4 MB)
+│   └── DNS/...                         # DNS kategorie
 │
-├── output/                        # 📊 Generované výstupy
-│   ├── ciselniky/
-│   │   └── isvz_ciselniky.json        # JSON číselníky
-│   ├── reports/
-│   │   ├── DIFF_VZ_*.md               # Rozdílové reporty (porovnání měsíců)
-│   │   ├── DIFF_DNS_*.md              # Rozdílové reporty DNS
-│   │   ├── VZ-OPEN_YYYY-MM.md         # 📊 Tabulkový souhrn otevřených VZ
-│   │   ├── VZ-ICT_YYYY-MM.md          # 📊 Tabulkový souhrn ICT VZ
-│   │   ├── DNS-ICT_YYYY-MM.md         # 📊 Tabulkový souhrn ICT DNS
-│   │   └── YYYY/MM/                   # Detailní měsíční reporty (MD)
-│   │       ├── VZ-OPEN_YYYY-MM.md     # Detailní report otevřených VZ
-│   │       ├── VZ-ICT_YYYY-MM.md      # Detailní report ICT VZ
-│   │       └── DNS-ICT_YYYY-MM.md     # Detailní report ICT DNS
-│   └── csv/
-│       ├── VZ-OPEN.csv               # ⭐ Nejnovější CSV (přepisuje se)
-│       ├── VZ-ICT.csv                # ⭐ Nejnovější CSV (přepisuje se)
-│       ├── DNS-ICT.csv               # ⭐ Nejnovější CSV (přepisuje se)
-│       └── YYYY/MM/                  # Měsíční CSV archiv
-│           ├── VZ-OPEN_YYYY-MM.csv   # CSV otevřených VZ (archiv)
-│           ├── VZ-ICT_YYYY-MM.csv    # CSV ICT VZ (archiv)
-│           └── DNS-ICT_YYYY-MM.csv   # CSV ICT DNS (archiv)
+├── 📁 output/                      # 📊 Výstupy
+│   ├── csv/
+│   │   ├── VZ-ICT.csv                  # ⭐ Nejnovější (Excel ready)
+│   │   └── 2026/01/...                 # Archiv
+│   └── reports/
+│       ├── VZ-ICT_2026-01.md           # ⭐ Souhrn
+│       ├── DIFF_VZ_01-2026.md          # ⭐ Co je nového
+│       └── 2026/01/...                 # Detailní reporty
 │
-└── archive/                       # 📦 Staré/debug skripty
-    ├── analyze_*.py                   # Analytické skripty
-    ├── debug_*.py                     # Debug skripty
-    └── ict_zakazky_report.*           # Staré reporty
+└── 📁 archive/                     # 📦 Historické soubory
 ```
 
-## 🚀 Rychlý start
+**Podrobnosti:** [FILE_STRUCTURE.md](docs/FILE_STRUCTURE.md)
 
-### Jednorázové použití
+## 📖 Dokumentace
 
-### Krok 1: Stažení dat
+### 🆕 Pro nové uživatele
+- **[QUICKSTART.md](QUICKSTART.md)** - ⭐ Začni tady! Kompletní návod krok za krokem
 
-Data se stahují z oficiálního portálu ISVZ NIPEZ:
+### 📅 Pravidelné používání
+- **[MONTHLY_README.md](docs/MONTHLY_README.md)** - Měsíční workflow a automatizace
 
-- **URL**: <https://isvz.nipez.cz/sites/default/files/content/opendata-rvz/VZ-MM-YYYY.json>
+### 📊 Práce s daty
+- **[REPORT_GENERATION.md](docs/REPORT_GENERATION.md)** - Struktura CSV (32 sloupců) a MD reportů
+- **[EXCEL_INTEGRACE.md](docs/EXCEL_INTEGRACE.md)** - Import CSV do Excelu, filtry, grafy
+- **[DOPORUCOVACI_SYSTEM.md](docs/DOPORUCOVACI_SYSTEM.md)** - Jak funguje hodnocení 1-5 ⭐
+- **[POROVNANI_MESICU.md](docs/POROVNANI_MESICU.md)** - Rozdílové reporty mezi měsíci
+
+### 📚 Referenční
+- **[CISELNIKY_PREHLED.md](docs/CISELNIKY_PREHLED.md)** - Přehled číselníků (CPV, Druh, Stav...)
+- **[NUTS_KRAJE.md](docs/NUTS_KRAJE.md)** - Převodní tabulka NUTS → Kraj
+- **[FILE_STRUCTURE.md](docs/FILE_STRUCTURE.md)** - Detailní struktura projektu
+
+## 🔄 Měsíční workflow
+
+### 1. Stažení dat (PowerShell + Python)
 
 ```powershell
-# Vytvoření adresářů
-New-Item -ItemType Directory -Force -Path ".\data\VZ"
-New-Item -ItemType Directory -Force -Path ".\data\DNS"
-
-# Stažení velkého VZ souboru (doporučeno použít PowerShell skript)
-.\download_vz.ps1 -Year 2026 -Month 1
-```
-
-### Krok 2: Filtrování otevřených zakázek
-
-```bash
-python scripts/filter_open_tenders.py
-```
-
-**Výstup:**
-
-- Soubor: `data/VZ/VZ-2026-01-OPEN.json`
-- Nalezeno: **970 otevřených zakázek** (1.36% z celku)
-
-### Krok 3: Filtrování ICT zakázek
-
-```bash
-python scripts/filter_ict_tenders.py
-```
-
-**Výstup:**
-
-- Soubor: `data/VZ/VZ-2026-01-ICT.json`
-- Nalezeno: **145 ICT zakázek** (14.95% z otevřených, vyloučeny stavební práce)
-
-### Krok 4: Přidání doporučení
-
-```bash
-python scripts/add_recommendations.py
-```
-
-**Přidá:**
-
-- Hodnocení 1-5 podle technologické shody (1 = nejlepší)
-- Keywords: .NET, React, Vue, SharePoint, Microsoft 365, Power Platform, Azure
-- Statistika: 9× ⭐⭐⭐⭐⭐ (6.2%), 62× ⭐⭐⭐⭐ (42.8%)
-
-### Krok 5: Zobrazení výsledků
-
-```bash
-python scripts/show_ict_tenders.py
-```
-
-**Zobrazí:**
-
-- Metadata a statistiky
-- Finanční přehled (celková hodnota: **2.7 mld Kč**)
-- Seznam všech ICT zakázek s lhůtami, odkazy a doporučeními
-
----
-
-## 🔄 Měsíční automatizace
-
-Pro **pravidelné měsíční zpracování** nových dat viz **[docs/MONTHLY_README.md](docs/MONTHLY_README.md)**
-
-### Rychlé použití
-
-```bash
-# Stáhnout a zpracovat nový měsíc (včetně generování reportů)
+# Stáhnout velký VZ soubor (1.3 GB)
 .\download_vz.ps1 -Year 2026 -Month 2
-python monthly_process.py --year 2026 --month 2 --download
 
-# Porovnat s minulým měsícem (automaticky určí předchozí)
+# Stáhnout ostatní kategorie
+python monthly_process.py --year 2026 --month 2 --download
+```
+
+### 2. Zpracování (5 automatických kroků)
+
+```bash
+python monthly_process.py --year 2026 --month 2
+```
+
+**Kroky:**
+1. ✓ Filtrování otevřených VZ (970 zakázek)
+2. ✓ Filtrování ICT z VZ (145 zakázek)
+3. ✓ Filtrování ICT z DNS (14 zakázek)
+4. ✓ Přidání doporučení 1-5 ⭐
+5. ✓ Generování MD + CSV reportů
+
+### 3. Porovnání s minulým měsícem
+
+```bash
+# Automaticky určí předchozí měsíc
 python monthly_process.py --compare 2026 2
 
-# Nebo explicitně zadat oba měsíce
+# Nebo explicitně
 python monthly_process.py --compare 2026 1 2026 2
 ```
 
-Vytvoří:
+## 📊 Výstupy
 
-**JSON soubory:**
-- `data/VZ/VZ-2026-02-OPEN.json` - Otevřené VZ zakázky
-- `data/VZ/VZ-2026-02-ICT.json` - ICT zakázky z VZ (s doporučeními 1-5)
-- `data/DNS/DNS-2026-02-ICT.json` - ICT záznamy z DNS (s doporučeními 1-5)
+### CSV soubory (pro Excel analýzu)
 
-**Markdown reporty:**
-- `output/reports/2026/02/VZ-OPEN_2026-02.md` - Přehled otevřených VZ
-- `output/reports/2026/02/VZ-ICT_2026-02.md` - Přehled ICT VZ (seřazeno podle doporučení)
-- `output/reports/2026/02/DNS-ICT_2026-02.md` - Přehled ICT DNS (seřazeno podle doporučení)
+```
+output/csv/
+├── VZ-ICT.csv         ← ⭐ HLAVNÍ SOUBOR (32 sloupců, aktualizuje se měsíčně)
+├── VZ-OPEN.csv        ← Všechny otevřené zakázky
+├── DNS-ICT.csv        ← ICT z dynamických systémů
+└── 2026/02/           ← Archiv s datem
+    ├── VZ-ICT_2026-02.csv
+    ├── VZ-OPEN_2026-02.csv
+    └── DNS-ICT_2026-02.csv
+```
 
-**CSV exporty:**
-- `output/csv/2026/02/VZ-OPEN_2026-02.csv` - CSV export otevřených VZ
-- `output/csv/2026/02/VZ-ICT_2026-02.csv` - CSV export ICT VZ (32 sloupců včetně doporučení + nových polí)
-- `output/csv/2026/02/DNS-ICT_2026-02.csv` - CSV export ICT DNS (32 sloupců včetně doporučení + nových polí)
-- `output/csv/VZ-ICT.csv` - **Nejnovější CSV** bez datumu v názvu (pro snadnou integraci do Excel)
-- `output/csv/DNS-ICT.csv` - **Nejnovější CSV** bez datumu v názvu
+**32 sloupců CSV obsahuje:**
+- Základní info (ID, název, hodnota, lhůty, zadavatel...)
+- **Doporučení** 1-5 ⭐ (technologická shoda)
+- Kategorie a sektor zadavatele
+- Financování EU, vhodnost pro SME
+- Váha ceny v hodnocení
+- URL odkazy (dokumentace, profil...)
 
-**Nová pole v CSV (od verze s doporučením):**
-- Financování EU, Kategorie zadavatele, Sektor zadavatele, Datum zahájení
-- Váha ceny (%), Doba trvání (měsíce), E-platba, Vhodné pro SME, Typ dle hodnoty
+### Markdown reporty
 
-**Rozdílové reporty:**
-- `output/reports/DIFF_VZ_02-2026.md` - Rozdílový report VZ (porovnání s 01-2026)
-- `output/reports/DIFF_DNS_02-2026.md` - Rozdílový report DNS (porovnání s 01-2026)
+```
+output/reports/
+├── VZ-ICT_2026-02.md     ← ⭐ Tabulkový souhrn (nejnovější)
+├── DIFF_VZ_02-2026.md    ← ⭐ Co je nového
+└── 2026/02/
+    └── VZ-ICT_2026-02.md ← Detailní report s plnými popisy
+```
+
+### Vyfiltrované JSON
+
+```
+data/VZ/
+├── VZ-2026-02.json         ← Originál (1.3 GB)
+├── VZ-2026-02-OPEN.json    ← ~970 otevřených (30 MB)
+└── VZ-2026-02-ICT.json     ← ~145 ICT s doporučením (4 MB)
+```
+
+## 💡 Tipy pro analýzu
+
+### V Excelu (VZ-ICT.csv)
+
+1. **Seřadit podle doporučení** - nejlepší shody (⭐⭐⭐⭐⭐) nahoře
+2. **Filtrovat podle kraje** - pouze váš region
+3. **Filtr "Vhodné pro SME" = Ano** - zakázky pro malé firmy
+4. **Filtr "Financování EU" = Ano** - EU projekty
+
+### Prioritizace
+
+**⭐⭐⭐⭐⭐ (1) - Top shoda:**
+- .NET, C#, React, Vue, Angular
+- SharePoint, Power Platform, M365
+- Azure, cloud services
+
+**⭐⭐⭐⭐ (2) - Silná shoda:**
+- Web development, software, aplikace
+- Databáze, integrace, API
+
+**⭐⭐⭐ (3) - Dobrá shoda:**
+- IT services, digitalizace
+- Portály, ESS systémy
+
+## 🔧 Technické detaily
+
+### Požadavky
+
+- Python 3.8+
+- PowerShell 5.1+ (pro stahování VZ)
+- ~2 GB volného místa
+
+### Instalace
+
+```bash
+git clone https://github.com/MartinMikes/ISVZ.git
+cd ISVZ
+```
+
+Žádné Python balíčky nejsou potřeba - používá pouze standardní knihovnu.
+
+### Datové zdroje
+
+**ISVZ NIPEZ Open Data:**
+- URL: https://isvz.nipez.cz/opendata/nova/{YEAR}/kategorie
+- Formát: JSON
+- Aktualizace: měsíčně (cca 5.-7. den v měsíci)
+- Velikost VZ: ~1.3 GB
+
+## 🆘 Řešení problémů
+
+**Chyba při stahování VZ:**
+```
+⚠️ Soubor VZ-2026-02.json neexistuje!
+```
+→ Stáhnout ručně z https://isvz.nipez.cz/opendata/nova/2026/kategorie  
+→ Uložit jako `data\VZ\VZ-2026-02.json`
+
+**Chyba při zpracování:**
+```
+❌ Chyba při filtrování otevřených zakázek
+```
+→ Zkontrolovat zda máte správný soubor v `data\VZ\`  
+→ Zkusit znovu spustit `python monthly_process.py --year 2026 --month 2`
+
+## 📜 Licence
+
+MIT License - viz [LICENSE](LICENSE)
+
+## 🤝 Přispívání
+
+Pull requesty vítány! Pro větší změny prosím nejdříve otevřete issue.
+
+## 📞 Kontakt
+
+Martin Mikeš - projekt vznikl pro osobní potřebu filtrování ICT zakázek
+
+---
+
+**Důležité odkazy:**
+- 📖 [QUICKSTART.md](QUICKSTART.md) - Rychlý start
+- 📅 [MONTHLY_README.md](docs/MONTHLY_README.md) - Měsíční workflow
+- 📊 [REPORT_GENERATION.md](docs/REPORT_GENERATION.md) - CSV struktura
+- ⭐ [DOPORUCOVACI_SYSTEM.md](docs/DOPORUCOVACI_SYSTEM.md) - Hodnocení
+- 📑 [EXCEL_INTEGRACE.md](docs/EXCEL_INTEGRACE.md) - Excel návod
 
 ## 📊 Výsledky (leden 2026)
 
